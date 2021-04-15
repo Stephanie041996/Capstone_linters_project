@@ -1,40 +1,47 @@
 
-# Project 3 - Tic Tac Toe
+# Project 3 - CSS linter Project
+This is a basic CSS linter project. It checks basic syntax in the provided CSS file and returns error messages where needed.
 
-
-
-## How Tic Tac Toe is played?
 
 
 
 ## Built With
-
 - Ruby
 
 ## Pre-request
 
 Ruby installed.
 
+
 ## Getting Started
-
 To get a local copy up and running follow these simple example steps.
+Clone repository from github to your local drive by following these steps:
+- Open Terminal
+- Change the current working directory to the location you want the cloned directory
+- You can clone the repository writing in terminal:
+  - `git clone  https://github.com/Stephanie041996/Capstone_linters_project.
+  - Press Enter to create your local clone
+- Make sure you have ruby installed locally run `ruby -v`**
+- Run `cd` Capstone_linters_project in the terminal**
+- Go to bin folder `cd bin` 
+- To start the linter type ```ruby main.rb``` in the terminal**
 
-1. Go to https://github.com/tanzila-abedin/BubbleSort-Ruby
-2. Click on the code button and copy the HTTPS/ SSH URL.
-3. On terminal, type `git clone` command followed by pasting HTTPS/ SSH URL to clone this repository on your local machine.
-4. Run `git checkout -b your-branch-name`. Make your contributions
-5. Push your branch up to your forked repository
-6. Open a Pull Request with a detailed description of the development branch of the original project for a review
+## Implemented Checks
+
+  - Check that there is no space at end of line.
+  - Check for two space inditation on inline code.
+  - Check closing { are at the end of the line.
+  - Check closing } do not have space or text in same line.
+  - Check for use of rem and em instead of px.
+  - Check for comments in code.
+
+### Prerequisites
+- Text editor
+- GitHub
+- Git
+- Ruby
 
 ## Authors
-
-👤 **Tanzila**
-
-![Tanzila's GitHub stats](https://github-readme-stats.vercel.app/api?username=tanzila-abedin&count_private=true&theme=dark&show_icons=true)
-
-- GitHub: [@githubhandle](https://github.com/tanzila-abedin)
-- Twitter: [@twitterhandle](https://twitter.com/TanzilaAbedin)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tanzila-abedin-331440b2/)
 
 👤 **Stephanie**
 
