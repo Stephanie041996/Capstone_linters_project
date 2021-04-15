@@ -14,6 +14,13 @@ class Stylint
       number += 1
       comment_check(line, number)
       ending_check(line, number)
+      colon_space_check(line, number)
+      empty_space_check(line, number)
+      px_check(line, number)
+      space_check(line, number)
+      start_space_check(line, number)
+      bracket_check(line, number)
+      bracket_check_end(line, number)
     end
     if @errors.length.zero?
       @errors << 'All checks succefully passed the linter check! No errors detected. '
