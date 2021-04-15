@@ -2,7 +2,7 @@
 # Project 3 - CSS linter Project
 This is a basic CSS linter project. It checks basic syntax in the provided CSS file and returns error messages where needed.
 
-
+![image](./asserts/linters.png)
 
 
 ## Built With
