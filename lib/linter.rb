@@ -1,3 +1,4 @@
+require 'colorize'
 require_relative('../lib/style_linter')
 # class to check style
 class Stylint
@@ -23,7 +24,7 @@ class Stylint
       bracket_check_end(line, number)
     end
     if @errors.length.zero?
-      @errors << 'All checks succefully passed the linter check! No errors detected. '
+      @errors << 'All checks succefully passed the linter check! No errors detected. '.green
     else
       @errors.sort { |el1, el2| el2 <=> el1 }
     end
