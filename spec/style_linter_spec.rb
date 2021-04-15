@@ -16,8 +16,8 @@ describe Stylint do
   describe '#space check' do
     describe 'there is two spaces before code ' do
       it 'checks if there are two spaces before main content lines' do
-        r = linter.send(:space_check, 'a', 9)
-        expect(r).to eq(['two empty space need on the line number 9 '])
+        r = linter.send(:space_check, ' ', 9)
+        expect(r).not_to eq(['two empty space need on the line number 9 '])
       end
     end
   end

@@ -7,7 +7,9 @@ module StyleLinter
   end
 
   def space_check(line, number)
-    @errors << "two empty space need on the line number #{number} " if line.start_with?('a') && !line.start_with?('  ')
+    return unless line =~ /\A\w/ && !line.start_with?('  ')
+
+    @errors << "two empty space need on the line number #{number} "
   end
 
   def px_check(line, number)
