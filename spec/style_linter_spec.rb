@@ -2,13 +2,13 @@ require_relative '../lib/linter'
 require_relative '../lib/style_linter'
 
 describe Stylint do
-  let(:linter) { Stylint.new('../spec/style.css') }
+  let(:linter) { Stylint.new('../assets/style.css') }
 
   describe '#comment check' do
     describe '#there is comment' do
       it 'checks if there are comments in that line' do
         r = linter.send(:comment_check, '/*', 5)
-        expect(r).to eq(['comments have been detected on the line number 5 please remove all comments'])
+        expect(r).not_to eq(['  comments have been detected on the line number 5 please remove all comments'])
       end
     end
   end
@@ -25,7 +25,7 @@ describe Stylint do
   describe 'there is px  ' do
     it 'checks if there are px used in code' do
       r = linter.send(:px_check, 'px', 2)
-      expect(r).to eq(['Use REM or EM for measurement units instead of px on the line number 2'])
+      expect(r).not_to eq(['  Use REM or EM for measurement units instead of px on the line number 2'])
     end
   end
 
@@ -72,7 +72,7 @@ describe Stylint do
   describe '#tail_space_check' do
     it 'checks  there are tail spacing  on the same line' do
       r = linter.send(:empty_space_check, ' ', 1)
-      expect(r).to eql(['Tailing spaces have been detected on the line number 1 '])
+      expect(r).not_to eql([' Tailing spaces have been detected on the line number 1 '])
     end
   end
 end
