@@ -6,7 +6,7 @@ module StyleLinter
 
     @errors << "#{'WARNING'.yellow}  comments have been detected on the line number #{number} please remove all comments\n"
   end
-  
+
   def space_check(line, number)
     return unless line =~ /\A\w/ && !line.start_with?('  ')
 
