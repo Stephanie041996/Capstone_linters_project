@@ -1,6 +1,6 @@
 require 'colorize'
 require_relative('../lib/style_linter')
-# class to check style
+
 class Stylint
   include StyleLinter
 
