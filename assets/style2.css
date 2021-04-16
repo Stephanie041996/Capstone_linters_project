@@ -1,34 +1,35 @@
-/*Top nav starts here*/
 .top-nav {
   padding: 2rem;
 }
 .nav {
-margin: 1rem;
-} 
+  margin: 1rem;
+}
 
 .image-heading {
-  font-size: 18px;
-  border-bottom-width: 1px;
+  font-size: 18rem;
+  border-bottom-width: 1rem;
   border-bottom-style: solid;
   border-color: gray;
   text-align: left;
-  padding-left: 19px;
-  padding-right: 150px;
+  padding-left: 19em;
+  padding-right: 150rem;
 }
 
-  .footer {
+.footer {
   padding: 1rem;
-  }
+}
 
 .section{
-  font:1rem;
+  font: 1rem;
 }
 
-.section {font-size: 2rem;}
+.section {
+  font-size: 2rem;
+}
 
 .top -footer {
   font: pink;
-}.bottom-footer
+}
 
 .social-icons a {
   padding: 8rem;
@@ -38,6 +39,6 @@ margin: 1rem;
   border-radius: 50em;
 }
 
-p {
-  font: pink
-  }
+.p {
+  font: pink;
+}
