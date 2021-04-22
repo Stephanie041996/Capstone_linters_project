@@ -1,0 +1,44 @@
+.top-nav {
+  padding: 2rem;
+}
+.nav {
+  margin: 1rem;
+}
+
+.image-heading {
+  font-size: 18rem;
+  border-bottom-width: 1rem;
+  border-bottom-style: solid;
+  border-color: gray;
+  text-align: left;
+  padding-left: 19em;
+  padding-right: 150rem;
+}
+
+.footer {
+  padding: 1rem;
+}
+
+.section{
+  font: 1rem;
+}
+
+.section {
+  font-size: 2rem;
+}
+
+.top -footer {
+  font: pink;
+}
+
+.social-icons a {
+  padding: 8rem;
+  color: black;
+  background-color: #11111115;
+  border: 1rem solid #fff;
+  border-radius: 50em;
+}
+
+.p {
+  font: pink;
+}
